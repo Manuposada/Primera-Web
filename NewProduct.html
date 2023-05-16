@@ -18,7 +18,7 @@
     <br>
     <h3>Por favor rellene el siguiente formulario para crear un nuevo producto</h3>
     <br>
-    <form action="/singup" method="post">
+    <form action="/singup" method="post" id="NewProduct">
         <p>
             <label for="name">Nombre del producto: </label>
             <input type="text" id="name" name="nombre" placeholder="Nombre del producto" required>
@@ -28,7 +28,7 @@
             <input type="number" id="price" name="precio" placeholder="Precio del producto" required>
         </p>
         <p>
-            <label for="description">Inventario: </label>
+            <label for="inventory">Inventario: </label>
             <input type="number" id="inventory" name="inventario" placeholder="Cantidad del producto en inventario" required>
         </p>
         <br>
@@ -53,5 +53,8 @@
             <input type="text" id="autor" name="autor" placeholder="Autor del producto">
         </p>
     </form>
+
+    <button type="submit" form="NewProduct" value="submit">Create Product</button>
+    <button type="reset" form="NewProduct" value="reset">Reiniciar</button>
 </body>
 </html> 
